@@ -102,7 +102,7 @@ createType(
     },
     {
       id: "frankleves",
-      title: "Frankleves",
+      title: "Frakfurti Leves",
       price: 1200
     },
     {
