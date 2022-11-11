@@ -1,0 +1,118 @@
+.daily-
+  &container
+    display: grid
+    grid-template-rows: repeat(3, 1fr)
+
+    margin: 48px
+    margin-top: 92px
+    padding: 24px
+    position: relative
+  &type
+    writing-mode: vertical-lr
+    text-orientation: upright
+
+    letter-spacing: -6px
+    margin: 12px 0
+
+    background: rgb(0, 0, 0, 0.75)
+
+    padding: 12px 8px
+    border-radius: 12px
+
+    margin-right: 12px
+  &meals
+    display: flex
+    overflow-x: scroll
+
+    width: 100%
+
+    flex-wrap: wrap
+    justify-content: flex-start
+    flex-direction: column
+    padding: 12px
+
+    background: rgb(0, 0, 0, 0.75)
+    border-radius: 12px
+  
+  &content-
+    &w
+      display: flex
+      margin-bottom: 12px
+  &elements
+
+    width: 256px
+    height: calc(100% - (18px * 2))
+
+    position: relative
+
+    background: rgb(0, 0, 0, 0.75)
+    padding: 18px
+
+    border-radius: 12px
+
+    margin-right: 12px
+    &-
+      &bg
+        width: 100%
+        height: 78%
+        border-radius: 12px
+
+        --img: url('../foods/paloczleves.jpg')
+
+        background-image: var(--img)
+        background-position: center
+        background-size: cover
+      &c
+        position: relative
+        height: 100%
+      &h
+        position: absolute
+        bottom: 12px
+      &order
+        width: 100%
+
+        position: absolute
+        bottom: 0
+
+        border: none
+        outline: none
+        transition: background 0.25s ease-in-out, scale 0.25s ease-in-out
+
+        border-radius: 6px
+
+        padding: 4px 12px
+
+        &:hover
+          scale: 0.985 0.975
+          background: rgb(225, 225, 225)
+        &:active
+          scale: 1.015 1.025
+          background: rgb(150, 150, 150)
+
+        &:hover > *:first-child
+          transform: translateY(12px)
+          opacity: 0
+
+        &:hover > *:last-child
+          transform: translateY(0px)
+          opacity: 1
+
+        *:last-child
+          transform: translateY(-12px)
+
+          width: 100%
+          opacity: 0
+          position: absolute
+
+          top: 50%
+          left: 50%
+
+          translate: -50% -52.75%
+        
+        h1
+          transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out
+
+          color: black
+          font-size: 18px
+
+          user-select: none

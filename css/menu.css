@@ -1,0 +1,22 @@
+.menu-container {
+  margin: 48px;
+  padding: 24px;
+  background: linear-gradient(30deg, rgb(148, 148, 148) 0%, rgb(255, 255, 255) 100%);
+  border-radius: 8px;
+  width: 65%;
+}
+.menu-container h1 {
+  color: black;
+  margin: 8px 0;
+}
+.menu-list-item {
+  color: rgb(50, 50, 50);
+  font-size: 20px;
+  margin-left: 20px;
+  transition: scale 0.15s ease-in-out, translate 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+.menu-list-item:hover {
+  scale: 1.05;
+  translate: 20px;
+  color: #f06e6e;
+}/*# sourceMappingURL=menu.css.map */

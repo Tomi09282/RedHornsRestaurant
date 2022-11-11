@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Horns Restaurant</title>
+
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/menu.css">
+</head>
+  <body>
+    <div class="navbar-container">
+      <div class="navbar-left-wrapper">
+        <img class="navbar-logo" src="../images/logo_transparent.png">
+        <div class="navbar-left-wrapper-sec">          
+          <h1 class="navbar-header">Red Horns Restaurant</h1>
+          <h2 class="navbar-quote">A legjobb étterem Debrecenben.</h2>
+        </div>
+      </div>
+
+      <div class="navbar-links-c">
+        <a class="navbar-link" href="../index.html">Kezdőlap</a>
+        <a class="navbar-link navbar-link-open" href="../index.html">Étlap</a>
+        <a class="navbar-link" href="../dailymenu/index.html">Napi menü</a>
+        <button onclick="OPEN_ORDER()" class="navbar-cart"></button>
+      </div>
+    </div>
+
+    <div class="menu-container">
+      <h1>Előételek</h1>
+      <ul class="menu-list">
+        <li class="menu-list-item">BRUSCHETTA (1300ft)</li>
+        <li class="menu-list-item">KASZINÓTOJÁS FRANCIASALÁTÁVAL (1300ft)</li>
+        <li class="menu-list-item">TATÁR BIFSZTEK (1300ft)</li>
+        <li class="menu-list-item">AVOCADOS TOAST (1300ft)</li>
+        <li class="menu-list-item">TONHAL SALÁTA (1300ft)</li>
+      </ul>
+      <h1>Levesek</h1>
+      <ul class="menu-list">
+        <li class="menu-list-item">HAGYMALEVES ROZSCIPÓBAN (1500ft)</li>
+        <li class="menu-list-item">MARHAHÚSLEVES KERTI ZÖLDSÉGEKKEL, CSIGATÉSZTÁVAL (1500ft)</li>
+        <li class="menu-list-item">BABGULYÁS ROZSCIPÓBAN (1500ft)</li>
+        <li class="menu-list-item">TOM-YUM LEVES (1500ft)</li>
+        <li class="menu-list-item">TOM-YUM LEVES KIRÁLYRÁKKAL (1500ft)</li>
+        <li class="menu-list-item">MARCIPÁNOS EPERKRÉM LEVES MANDULÁS TÚRÓGOMBÓC (1500ft)</li>
+        <li class="menu-list-item">HARCSA HALÁSZLÉ (1500ft)</li>
+        <li class="menu-list-item">KUKORICAKRÉMLEVES TORTILLA CHIPSEL (1500ft)</li>
+      </ul>
+      <h1>Főételek</h1>
+      <ul class="menu-list">
+        <li class="menu-list-item">PIRI PIRI CSIRKEMELL STEAK (2900ft)</li>
+        <li class="menu-list-item">CSIRKEMELL CHEDDAR SAJTMÁRTÁSSAL (2900ft)</li>
+        <li class="menu-list-item">FŰSZERES TEJFÖLBEN PÁCOLT CSIRKEMELL RÁNTVA, BURGONYAPÜRÉVEL, BALZSAMOS SALÁTÁVAL (2900ft)</li>
+        <li class="menu-list-item">MÉZES MUSTÁROS CSIRKEMELL ZÖLDSÉGES SÜLT RIZZSEL (2900ft)</li>
+        <li class="menu-list-item">JALAPENO-S CSIRKE, AZTÉK RIZZSEL FŰSZERES TEJFÖLLEL (2900ft)</li>
+        <li class="menu-list-item">BACONOS CSIRKEMELL MASCARPONÉS KACSAMÁJJAL TÖLTVE PARÁZS BURGONYÁVALGRILLEZETT SPÁRGÁVAL (2900ft)</li>
+        <li class="menu-list-item">LEROY SPARE RIBS (2900ft)</li>
+        <li class="menu-list-item">ARGENTÍN STEAK (250 G) (2900ft)</li>
+        <li class="menu-list-item">Black Angus Steak (250gr) (2900ft)</li>
+        <li class="menu-list-item">JACK DANIEL'S STEAK HAGYMAKARAMELLBEN CHEDDAROS BURGONYAPÜRÉVEL, GRILLEZETT ZÖLDSÉGGEL (2900ft)</li>
+        <li class="menu-list-item">PASTA CARBONARA (2900ft)</li>
+        <li class="menu-list-item">PANKÓ MORZSÁS GARNÉLA CSÓNAKBURGONYÁVAL KAPRIS MAJONÉZZEL (2900ft)</li>
+        <li class="menu-list-item">TRADITIONAL FISH&CHIPS (2900ft)</li>
+      </ul>
+      <h1>Desszertek</h1>
+      <ul class="menu-list">
+        <li class="menu-list-item">FEHÉRCSOKIS MÁK SUFFLE CSIPKEBOGYÓS VÖRÖSÁFONYA RAGUVAL (1800ft)</li>
+        <li class="menu-list-item">PISZTÁCIÁS CREME BRULEE (1800ft)</li>
+        <li class="menu-list-item">CUKORMENTES HOMOKTÖVIS SAJTTORTA GRÁNÁTALMA VELŐVEL (1800ft)</li>
+        <li class="menu-list-item">HÁZI CSOKOLÁDÉTORTA EPERRAGUVAL, LEVENDULÁS FEHÉRCSOKIVAL, VANÍLIA FAGYLALT (1800ft)</li>
+        <li class="menu-list-item">PALACSINTÁK (TÖBBFÉLE) (1800ft)</li>
+      </ul>
+      <h1>Üditők</h1>
+      <ul class="menu-list">
+        <li class="menu-list-item">Limonádé (többféle) 0.5l (500ft)</li>
+        <li class="menu-list-item">Coca Cola 0.25l (500ft)</li>
+        <li class="menu-list-item">Coca Cola Zero 0,25l (500ft)</li>
+        <li class="menu-list-item">Fanta 0,25l (narancs, bodza) (500ft)</li>
+        <li class="menu-list-item">Fuzetea 0,25l (citrom, őszibarack) (500ft)</li>
+        <li class="menu-list-item">Kinley 0,25l (gyömbér, tonik, virgin mojito) (500ft)</li>
+        <li class="menu-list-item">Sprite 0,25l (500ft)</li>
+        <li class="menu-list-item">Cappy 0,25l Alma 20% (500ft)</li>
+        <li class="menu-list-item">Cappy 0,25l Eper 35% (500ft)</li>
+        <li class="menu-list-item">Cappy 0,25l Multivitamin 50% (500ft)</li>
+        <li class="menu-list-item">Cappy 0,25l Narancs 100% (500ft)</li>
+        <li class="menu-list-item">Cappy 0,25l Őszibarack 46% (500ft)</li>
+        <li class="menu-list-item">Cappy 0,25l Őszibarack 46% (500ft)</li>
+        <li class="menu-list-item">Házi limonádé (500ft)</li>
+      </ul>
+    </div>
+
+    <footer class="footer-c footer-rel">
+      <div class="footer-inp-wrapper">
+        <img class="footer-logo" src="../images/logo_transparent.png">
+        
+        <div>
+          <h1 class="footer-h">Red Horns Restaurant</h1>
+          Tel.: 06-52/970-840 <br/>
+          Mobil: +36 30/30-50-750 <br>
+          Min rendelés: 2000 HUF <br/>
+          Kiszállítási terület: Debrecen <br/>
+          Szállítási idő: 60-70 perc <br/>
+          Szállítási díj: 250 HUF <br/><br/>
+          Kapcsolat: <br/>
+          * 4032 Debrecen, Pallagi út, 7 <br/>
+          * Email: info@redhornsdebrecen.hu <br/>
+        </div>
+          
+      </div>
+      <div class="footer-map-c">
+        <iframe
+          class="footer-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692.720953570422!2d21.628430715802942!3d47.55375949961987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47470ded3dfd6f91%3A0x693a8d3b0f795990!2sDebrecen%2C%20Pallagi%20%C3%BAt%207%2C%204032!5e0!3m2!1shu!2shu!4v1666350333371!5m2!1shu!2shu"
+          width="512"
+          height="222"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <h1 class="footer-copyright">© Copyright RedHorns Restaurant. 2022 Minden jog fenntartva.</h1>
+    </footer>
+
+  </body>
+
+  <script src="../index.js"></script>
+</html>
