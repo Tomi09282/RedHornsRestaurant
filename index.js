@@ -1,4 +1,4 @@
-const order_identifier = "redhorns__cart"
+const order_identifier = "redhorns__cart" // Key,value
 
 var orders = {}
 
